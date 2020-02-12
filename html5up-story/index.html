@@ -35,16 +35,16 @@
 				<!-- Two -->
 					<section class="spotlight style5 orient-right content-align-center image-position-center fullscreen" id='first'>
 						<div class="content">
-							From
-							<h3>10Gb<div>6.7 million rows<div>43 columns</h3>
-							To
-							<h3>500Mb<div>0.9 million rows<div>15 columns</h3>
+							<h1> NLP</h1>
+							<li>Natural Language Processing</li>
+							<li>Focuses on how computers process large amount of data</li>
+							<br>
 							<ul class="actions stacked">
-								<li><a href="#second" class="button big wide smooth-scroll-middle">NLP?</a></li>
+								<li><a href="#second" class="button big wide smooth-scroll-middle">NLP!</a></li>
 							</ul>
 						</div>
 						<div class="image">
-							<img src="images/yelp_data.png" alt="" />
+							<img src="images/NLP.jpeg" alt="" />
 						</div>
 					</section>
 
@@ -64,7 +64,7 @@
 						<!-- Four -->
 							<section class="spotlight style2 orient-left content-align-center image-position-center fullscreen" id='third'>
 								<div class="content">
-									<h2>Answer: it doesn't. It instead turns them into vectors</h2>
+									<h2>Answer: they don't.</h2>
 									<ul class="actions stacked">
 										<li><a href="#fourth" class="button big wide smooth-scroll-middle">W2V / GloVe</a></li>
 									</ul>
@@ -78,7 +78,7 @@
 								<section class="spotlight style6 orient-left content-align-center image-position-center fullscreen" id='fourth'>
 									<div class="content">
 										<ul class="actions stacked">
-											<li><a href="#fifth" class="button big wide smooth-scroll-middle">EDA</a></li>
+											<li><a href="#fifth" class="button big wide smooth-scroll-middle">Data Processing</a></li>
 										</ul>
 									</div>
 									<div class="image">
@@ -87,8 +87,26 @@
 								</section>
 
 								<!-- Six -->
+								<section class="banner style1 orient-left content-align-center image-position-center fullscreen" id='fifth'>
+									<div class="content">
+										<h2>Dataset & Pre-processing</h2>
+										<ul>
+										<li>Yelp's Annual Challenge Dataset</li>
+										<li>10Gb; 6.7 million rows; 43 columns</li>
+										<li>Down to 500Mb; .8 million rows; 15 columns <br>based on macro trends and regional indicators</li>
+										<li>Lemmatized, tokenized, analyzed through Gensim and Spacy</li>
+									</ul>
+										<ul class="actions stacked">
+											<li><a href="#sixth" class="button big wide smooth-scroll-middle">Exploratory Data Analysis</a></li>
+										</ul>
+									</div>
+									<div class="image">
+										<img src="images/yelp_data.png" alt="" />
+									</div>
+								</section>
+
 								<!-- Gallery -->
-								<div class="gallery style1 big lightbox onscroll-fade-in" id='fifth'>
+								<div class="gallery style1 big lightbox onscroll-fade-in" id='sixth'>
 									<article>
 										<a href="images/gallery/wordcloud/az.png" class="image">
 											<img src="images/gallery/wordcloud/az.png" alt="" />
@@ -154,7 +172,7 @@
 										</div>
 									</article>
 									<article>
-										<a href="#sixth" class="image">
+										<a href="#seventh" class="image">
 											<img src="images/gallery/wordcloud/next.png" alt="" />
 										</a>
 										<div class="caption">
@@ -166,14 +184,14 @@
 						</section>
 
 							<!-- Seven -->
-									<section class="spotlight style5 orient-left content-align-center image-position-center fullscreen" id='sixth'>
+									<section class="spotlight style5 orient-left content-align-center image-position-center fullscreen" id='seventh'>
 										<div class="content">
 											<h2>Non-Neural <div>ML</h2>
 												  <li>Features: Tokenized reviews</li>
 												  <li>Target: User Rating from 1 to 5</li>
 													<br>
 											<ul class="actions stacked">
-												<li><a href="#seventh" class="button big wide smooth-scroll-middle">Results</a></li>
+												<li><a href="#eighth" class="button big wide smooth-scroll-middle">Results</a></li>
 											</ul>
 										</div>
 										<div class="image">
@@ -182,17 +200,64 @@
 									</section>
 
 									<!-- Seven -->
-										<section class="spotlight style5 orient-left content-align-center image-position-center fullscreen" id='seventh'>
+										<section class="spotlight style3 orient-left content-align-center image-position-center fullscreen" id='eighth'>
 											<div class="content">
+												<h3>Random Forest: 49.86% accuracy</h3>
+												<h3>Bernoulli Naive Bayes: 49.88% accuracy</h3>
+												<br>
 												<ul class="actions stacked">
-													<li><a href="#second" class="button big wide smooth-scroll-middle">GLOVE</a></li>
+													<li><a href="#nineth" class="button big wide smooth-scroll-middle">Neural</a></li>
 												</ul>
 											</div>
 											<div class="image">
-												<img src="images/3dvis.png" alt="" />
+												<img src="images/gameover.gif" alt="" />
 											</div>
 										</section>
-
+										<!-- eight -->
+										<section class="banner style1 orient-right content-align-center image-position-center fullscreen" id='nineth'>
+											<div class="content">
+												<h3>Attempt 1: Pure LSTM model with 32 neurons<br> -> 70% accuracy - 49% validation accuracy</h3>
+												<h3>Attempt 2: Pure LSTM model with 64 neurons<br> -> 70% accuracy - 48% validation accuracy</h3>
+												<h3>Attempt 3: Bidirectional LSTM model with 64 neurons<br> -> 80% accuracy - 55% validation accuracy</h3>
+												<h3>Attempt 4: CNN with 64 neurons + Bidirectional LSTM model with 64 neurons<br> -> 84% accuracy - 60% validation accuracy</h3>
+												<ul class="actions stacked">
+													<li><a href="#tenth" class="button big wide smooth-scroll-middle">Why so bad?</a></li>
+												</ul>
+											</div>
+											<div class="image">
+												<img src="images/unnamed.jpg" alt="" />
+											</div>
+										</section>
+										<!-- ninth -->
+										<section class="banner style1 orient-left content-align-center image-position-center fullscreen" id='tenth'>
+											<div class="content">
+												<h2>Limitations</h2>
+												<h3>Problems of 2, 3, and 4.</h3>
+												<h4><b>No consistency</b></h4>
+												<br>
+												<ul class="actions stacked">
+													<li><a href="#eleventh" class="button big wide smooth-scroll-middle">Conclusion</a></li>
+												</ul>
+											</div>
+											<div class="image">
+												<img src="images/question.jpg" alt="" />
+											</div>
+										</section>
+										<!-- tenth -->
+										<section class="banner style3 orient-left content-align-center image-position-center fullscreen" id='eleventh'>
+											<div class="content">
+												<h1>Conclusion</h1>
+												<h3><b><u>Every detail matters!</b></u></h3>
+												<h3>It's always the miniscule subtleties that lead to a different prediction</h3>
+												<h4>
+												<ul class="actions stacked">
+													<li><a href="https://jdavid.dev" class="button big wide smooth-scroll-middle">Thanks!</a></li>
+												</ul>
+											</div>
+											<div class="image">
+												<img src="images/dance.gif" alt="" />
+											</div>
+										</section>
 
 
 				<!-- Footer -->
