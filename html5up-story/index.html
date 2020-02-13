@@ -18,11 +18,10 @@
 			<div id="wrapper" class="divided">
 
 				<!-- One -->
-					<section class="banner style1 orient-left content-align-left image-position-right fullscreen onload-image-fade-in onload-content-fade-right">
+					<section class="banner style1 orient-left content-align-right image-position-right fullscreen onload-image-fade-in onload-content-fade-right">
 						<div class="content">
 							<h1>The Reviews</h1>
-							<p class="major">In-Depth Analysis into Yelp's Dataset Using NLP</p>
-							<p><i>by David Lee</i></p>
+							<p class="major">In-Depth Analysis into Yelp's Dataset Using NLP<br><i>by David Lee</i></p>
 							<ul class="actions stacked">
 								<li><a href="#first" class="button big wide smooth-scroll-middle">Let's go!</a></li>
 							</ul>
@@ -33,11 +32,11 @@
 					</section>
 
 				<!-- Two -->
-					<section class="spotlight style5 orient-right content-align-center image-position-center fullscreen" id='first'>
+					<section class="spotlight style5 orient-right content-align-left image-position-center fullscreen" id='first'>
 						<div class="content">
-							<h1> NLP</h1>
+							<h1>NLP</h1>
 							<li>Natural Language Processing</li>
-							<li>Focuses on how computers process large amount of data</li>
+							<li>Focuses on how computers process large amount of text data</li>
 							<br>
 							<ul class="actions stacked">
 								<li><a href="#second" class="button big wide smooth-scroll-middle">NLP!</a></li>
@@ -87,14 +86,17 @@
 								</section>
 
 								<!-- Six -->
-								<section class="banner style1 orient-left content-align-center image-position-center fullscreen" id='fifth'>
+								<section class="banner style1 orient-left content-align-left image-position-center fullscreen" id='fifth'>
 									<div class="content">
 										<h2>Dataset & Pre-processing</h2>
 										<ul>
 										<li>Yelp's Annual Challenge Dataset</li>
 										<li>10Gb; 6.7 million rows; 43 columns</li>
-										<li>Down to 500Mb; .8 million rows; 15 columns <br>based on macro trends and regional indicators</li>
-										<li>Lemmatized, tokenized, analyzed through Gensim and Spacy</li>
+										<li>Processed via Gensim and Spacy</li>
+										<li>Resulting in 500Mb; 0.8 million rows; 15 columns</li>
+										<li>Based on macro trends and regional indicators (8 US/CA states)</li>
+										 <li><b>Features: Tokenized reviews</b></li>
+										 <li><b>Target: User Rating from 1 to 5</b></li>
 									</ul>
 										<ul class="actions stacked">
 											<li><a href="#sixth" class="button big wide smooth-scroll-middle">Exploratory Data Analysis</a></li>
@@ -184,12 +186,14 @@
 						</section>
 
 							<!-- Seven -->
-									<section class="spotlight style5 orient-left content-align-center image-position-center fullscreen" id='seventh'>
+									<section class="spotlight style5 orient-left content-align-left image-position-center fullscreen" id='seventh'>
 										<div class="content">
-											<h2>Non-Neural <div>ML</h2>
-												  <li>Features: Tokenized reviews</li>
-												  <li>Target: User Rating from 1 to 5</li>
-													<br>
+											<h2>Non-Neural <div>Machine Learning<br>Algorithms</h2>
+												<ul>
+												<li>Multi-class classification</li>
+												<li>8 Models </li>
+												<li>Taking the mean</li>
+											</ul>
 											<ul class="actions stacked">
 												<li><a href="#eighth" class="button big wide smooth-scroll-middle">Results</a></li>
 											</ul>
@@ -231,8 +235,8 @@
 										<!-- ninth -->
 										<section class="banner style1 orient-left content-align-center image-position-center fullscreen" id='tenth'>
 											<div class="content">
-												<h2>Super unhappy consumer</h2>
-												<h3>Wants to give this restaurant 1 star (minimum)</h3>
+												<h2>This unhappy consumer</h2>
+												<h3>wants to give the restaurant 1 star (minimum)</h3>
 												<br>
 												<ul class="actions stacked">
 													<li><a href="#eleventh" class="button big wide smooth-scroll-middle">Beep...beep...beep</a></li>
